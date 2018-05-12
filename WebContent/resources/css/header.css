@@ -1,0 +1,64 @@
+/*  header  */
+
+/*----add by Joyan Start---*/
+.header{width:100%;height:100px;transition:all 500ms ease;  }
+.header1{position:relative;  }
+.header.header2{position:absolute;z-index: 99;background:transparent;}
+.header.header1,.header.fix{background:#ff923a;}
+.header.fix{position:fixed;z-index:99;top:0;left:0;height:100px;}
+.head_wrap{width:1000px;position:relative;margin:0 auto;padding-top:30px;}
+.w_logo{position:absolute;left:0;height:40px;}
+.w_nav{display:block;width:100%;height:40px;text-align: right; }
+.w_nav .nav_item{display:inline-block;padding:0 20px;background:transparent;line-height:38px;color:#FFFFFF;font-size:20px;text-decoration: none;}
+.header1 .w_nav .nav_item,.fix .w_nav .nav_item{color:#fff;}
+.header .w_nav .nav_item.active,.header .w_nav .nav_item:hover{
+	border-radius:40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background:#fff;color:#f7a45d;
+}
+	
+.banner_layer{
+	width:1980px;
+	height:739px;
+	position:relative;
+	left:50%;
+	margin-left:-990px;
+	background:url(../img/v2/top_bg.jpg) no-repeat;
+	background-size:100%;
+
+}
+	 .banner_layer .layer-contain{
+	width:430px;
+	height:300px;
+	position:absolute;
+	left:1113px;
+	top:255px;
+}
+.banner_layer .layer-contain .slogan{
+	height:auto;
+	margin-bottom:48px;
+}
+
+	.banner_layer .layer-contain .btn_theme{
+	display:inline-block;
+	margin-right:30px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
+	height:50px;
+	line-height:50px;
+	font-size:22px;
+	font-weight:bold;
+	color:#fff;
+	padding:0 45px;
+	background:#FFc840;
+	cursor:pointer;
+	box-shadow: 0px 1px 5px  #808080;
+}
+.banner_layer .layer-contain .btn_theme:hover{
+	box-shadow: 0px 4px 6px  #fff;
+	background-color:#f66f34;
+}

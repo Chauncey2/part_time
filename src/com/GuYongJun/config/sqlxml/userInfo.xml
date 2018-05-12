@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//www.mybatis.org//DTD Mapper 3.0//EN"
+    "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="userInfo">
+
+	<resultMap type="com.GuYongJun.reality.userBean" id="userInfoResult">
+		<id column="id" jdbcType="INTEGER" property="id"/>
+		<result column="account" jdbcType="VARCHAR" property="account"/>
+		<result column="password" jdbcType="VARCHAR" property="password"/>
+		<result column="nickname" jdbcType="VARCHAR" property="nickName"/>
+		<result column="realname" jdbcType="VARCHAR" property="realName"/>
+		<result column="tel" jdbcType="VARCHAR" property="tel"/>
+		<result column="email" jdbcType="VARCHAR" property="email"/>
+		<result column="regTime" jdbcType="TIMESTAMP" property="regTime"/>
+		<result column="usertype" jdbcType="INTEGER" property="usertype"/>
+	</resultMap>
+	
+	<select id="queryUserInfo" parameterType="com.GuYongJun.reality.userBean" resultMap="userInfoResult">
+		select id,account,password,nickname,realname,tel,email,regTime,usertype from userinfo where 1=1 
+	<if test="account !=null and !&quot;&quot;.equals(account.trim())">
+		and account=#{account}
+	</if>
+	<if test="password !=null and !&quot;&quot;.equals(password.trim())">
+		and password=#{password}
+	</if>
+	</select >
+	<insert id="insertTojobMessage" parameterType="com.GuYongJun.reality.userBean">
+		INSERT INTO userinfo (account,password,nickname,realname,tel,email,regTime,usertype)
+VALUES(#{account},#{password},#{nickName},#{realName},#{tel},#{email},#{regTime},#{usertype})
+	</insert>
+</mapper>
