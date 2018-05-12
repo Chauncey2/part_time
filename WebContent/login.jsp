@@ -33,7 +33,7 @@
 	<!-- 登录界面 -->
 	<div class='login'>
 		<div class='login_title'>
-			<span>用户登录</span>
+			<span>用户登录</span>			
 		</div>
 
 		<div class='login_fields'>
@@ -113,6 +113,7 @@
 		src="${basePath}resources/js/jquery.mockjax.js"></script>
 
 	<script type="text/javascript">
+	
 		var canGetCookie = 0;//是否支持存储Cookie 0 不支持 1 支持
 		var ajaxmockjax = 0;//是否启用虚拟Ajax的请求响 0 不启用  1 启用
 		//默认账号密码
@@ -121,6 +122,7 @@
 
 		var CodeVal = 0;
 		Code();
+		
 		function Code() {
 			if (canGetCookie == 1) {
 				createCode("AdminCode");
@@ -130,6 +132,7 @@
 				showCheck(createCode(""));
 			}
 		}
+		
 		function showCheck(a) {
 			CodeVal = a;
 			var c = document.getElementById("myCanvas");

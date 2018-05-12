@@ -15,10 +15,6 @@
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
-<!--  使低于IE9版本的浏览器支持html5标签  -->
-<!--[if lt IE 9]>
-    <script src="//www.jianzhimao.com/web/assets/js/plugin/html5/html5.js"></script>
-    <![endif]-->
 <link rel="icon"
 	href="//oss.aliyuncs.com/jianzhimao/web-res/icon/jianzhimao-logo-min.png?version=2.25.5"
 	type="image/x-icon" />
@@ -46,28 +42,7 @@
 		src="${basePath}resources/js/jquery.min.js"></script>
 </head>
 <body>
-	
 	<script src="${basePath}resources/js/sea.js"></script>
-	
-	
-	<script>
-		var year = new Date().getFullYear(), month = (new Date().getMonth() + 1 > 9) ? new Date()
-				.getMonth() + 1
-				: "0" + (new Date().getMonth() + 1), date = (new Date()
-				.getDate() > 9) ? new Date().getDate() : "0"
-				+ new Date().getDate(), hour = (new Date().getHours() > 9) ? new Date()
-				.getHours()
-				: "0" + new Date().getHours();
-		time = new Date().getTime();
-		var datetime = year + month + date + hour + time;
-		seajs.config({
-			alias : {},
-			map : [ [ /^(.*\/web\/assets\/js\/.*\.(?:css|js))(?:.*)$/i,
-					'$1?v=' + datetime ] ]
-		});
-	</script>
-	
-	
 	<header class="header"> 
 	<nav class="w_main navigation_box">
 	<div class="city_wrap">
@@ -77,21 +52,21 @@
 		<a rel="nofollow" href="">首页</a> <a
 			rel="nofollow" href="javascript:;" id="cooperation"
 			onclick="document.getElementById('cooperation_box_alt').style.display='block';">申请合作</a>
-		<a rel="nofollow" href="">企业服务</a>   <a href="login.jsp" class="selected" id="login" href="javascript:;">登录</a>
-	</div>
+		<a rel="nofollow" href="">企业服务</a>  
+		<div class="channel_box">
+		 <a href="login.jsp" class="selected" id="login" href="javascript:;">登录</a>
+		</div>
+	</div >
 	<div>
 	<%
 	if(session.getAttribute("nickName")!=null){
 		out.print("欢迎你！"+session.getAttribute("nickName"));
-		//out.print("<script>");
-		//out.print("$('#login').css({display:none})");
-		//out.print("</script>");
 		}	
-	%>
-	
+	%>	
 	</div>
 	</nav> 
 	</header>
+
 	<section class="container"> <header class="w_main">
 	<div class="logo_box clearfix">
 		<a href="/" class="logo left"><img
@@ -119,8 +94,6 @@
 	</div>
 	<div class="cnts">
 		<ul class="box">
-			
-
 			<li><span>区&nbsp;&nbsp;域:</span> <a href="#" rel="nofollow"
 				class="selected">不限</a> <a href="#" class="tab">清浦区</a>
 				<a href="#" class="tab">清河区</a> <a href="#"
@@ -128,27 +101,25 @@
 		</ul>
 	</div>
 	</aside>
-
 	<div class="order_box">
 		<ul class="order_tab">
 			<a href="#">
 				<li class="cur">最新发布</li>
-			</a>
-			<a href="#"><li class="">最高薪资</li></a>
-			<a href="#"><li class="">最多人看</li></a>
+			</a>			
+			<!--  <a href="#"><li class="">最高薪资</li></a>
+			<a href="#"><li class="">最多人看</li></a>-->		
 		</ul>
 	</div>
 	<div class="content_box clearfix">
 		<div class="content_list_box">
 			<ul class="content_list_wrap" id="content_list_wrap">
-			
+			<!-- EL表达式，批量显示兼职信息 -->
 			<c:forEach items="${messageList}" var="message"
 								varStatus="status">
 				<li>
 					<div class="left type_wrap">
 						<i class="type qt"></i>
-					</div> <a href="#"
-					title="${message.cname}" class="left title hot">${message.cname}</a>
+					</div> <a href="#" title="${message.cname}" class="left title hot">${message.cname}</a>
 					
 					<div class="left area">
 						<span title="${message.jlocal}"><i class="icon-map-marker"></i>&nbsp;${message.jlocal}</span>
@@ -160,11 +131,9 @@
 						<i class="icon-time"></i> ${message.jtime}
 					</div>
 				</li>
-			</c:forEach>
-				
-									
+			</c:forEach>						
 			</ul>
-
+			
 			<div class="content_page_box">
 				<ul class="content_page_wrap" id="content_page_wrap">
 					<li><a class="selected" rel="nofollow" href="#">1</a></li>
@@ -178,7 +147,6 @@
 			<a target="_blank" class="content_ad_pic"
 				href="#"> <!--<img src="/web/assets/img/miaotask/pic_money.jpg">-->
 			</a>
-
 			<div class="content_ad_box"
 				style="border: 1px solid #dddddd; margin-bottom: 20px;">
 				<div class="p1">校园兼职网站简介</div>
@@ -187,10 +155,6 @@
 					想提高招聘效果，发兼职？<a rel="nofollow"
 						href="#">马上发布</a>
 				</div>
-
-
-
-
 				<ul class="rcm_text">
 					<li>
 						<h2>一个真实可靠的兼职招聘平台</h2>
@@ -223,12 +187,10 @@
 			<div class="bottom">我知道了</div>
 		</div>
 	</div>
-	<footer class="w_main container_footer"> <!-- 附近城市 -->
-	
-
-	</footer></section>
+	</section>
 	
 	<section class="w_main side_navigation_box">
+	
 	<div class="personal-center_box">
 		<div class="hd">
 			<i class="icon-user"></i> <a href="#">管理中心</a>
@@ -237,17 +199,18 @@
 			<li><a rel="nofollow"
 				href="login.jsp" class="selected">登录</a></li>
 			<li><a rel="nofollow"
-				href="sign-up.jsp"> 注册</a></li>
+				href="sign-up.jsp">注册</a></li>
 		</ul>
 	</div>
-	<div id="j-hint3" style="display: none">
+	
+	<div id="j-hint3" style="display: none" >
 		<div class="m-hint">
 			<ul class="m-sqrz_list">
-				<li class="rz_last"><a href="/ctrlcompaddval/authen"><p></p>
-						<span>实名认证</span></a>
+				<li class="rz_last"><a href="">
+					<span>实名认证</span></a>
 					<h6>通过线上或线下进行资料提交，通过雇佣君信息审核，完成认证享受特权</h6></li>
-				<li class="vip_disabled"><a href="#"><p></p> <span>VIP申请</span></a>
-					<h6>该地区暂未开放，敬请期待</h6></li>
+				<li class="vip_disabled"><a href="#"><span>VIP申请</span></a>
+					</li>
 			</ul>
 		</div>
 	</div>
@@ -298,49 +261,9 @@
 	</div>
 	<!-- 20150817 当企业未认证时，这里输出 true 前端判断流程 -->
 	<div class="info_hidden" id="a" style="display: none">{ 'a': }</div>
-	<input type="hidden" id="account_status" value="0" /> <!--20150817  弹窗js  -->
-	<script TYPE="application/javascript">
-		
-
-    (function() {
-        var getCookie = function(c_name) {
-            if (document.cookie.length > 0) {
-                c_start = document.cookie.indexOf(c_name + "=")
-                if (c_start != -1) {
-                    c_start = c_start + c_name.length + 1
-                    c_end = document.cookie.indexOf(";", c_start)
-                    if (c_end == -1)
-                        c_end = document.cookie.length
-                    return unescape(document.cookie.substring(c_start, c_end))
-                }
-            }
-            return ""
-        };
-        var el = document.getElementById('wx_enter');
-        if (el == null) {
-            return;
-        }
-        if (getCookie('isw') === '0') {
-            el.className = '';
-        }
-        var tag_session = localStorage.getItem("apply_guide_xiaoguo");
-        if(!tag_session){
-            var ali = document.getElementById("applyVipXiaoguo").getElementsByClassName("tag")[0];
-            ali.style.display = 'inline-block';
-
-            //$("#applyVipXiaoguo .tag").hide();
-        }
-
-
-    })();
-    function closeApplyTag(){
-        localStorage.setItem("apply_guide_xiaoguo",1);
-        var ali = document.getElementById("applyVipXiaoguo").getElementsByClassName("tag")[0];
-        ali.style.display = 'none';
-        //$("#applyVipXiaoguo .tag").hide();
-    }
-
-	</script> <footer class="footer">
+	<input type="hidden" id="account_status" value="0" />
+	
+	<footer class="footer">	
 	<div class="w_main channel">
 		<a target="_blank" rel="nofollow"
 			href="#"
@@ -357,124 +280,11 @@
 			rel="nofollow"
 			href=""><img
 			src="" /></a>
-	</div>
+	</div>	
+	</footer> 
 	
-	</footer> <script type="text/javascript">
-		//CNZZ统计
-		var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
-				: " http://");
-		document
-				.write(unescape("%3Cspan id='cnzz_stat_icon_1000413010'%3E%3C/span%3E%3Cscript src='"
-						+ cnzz_protocol
-						+ "w.cnzz.com/q_stat.php%3Fid%3D1000413010' type='text/javascript'%3E%3C/script%3E"));
-
-		//baidu统计
-		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
-				: " http://");
-		document
-				.write(unescape("%3Cscript src='"
-						+ _bdhmProtocol
-						+ "hm.baidu.com/h.js%3F447f87add4dbd73deca17a45d8536dbd' type='text/javascript'%3E%3C/script%3E"));
-	</script> <script>
-	//延迟CNZZ统计, 以免影响页面载入
-	
-</script> <script type='text/javascript'>
-	var user_id = "";
-	var company_name = "";
-	var user_name = "";
-	var company_id = "";
-	var _vds = _vds || [];
-	window._vds = _vds;
-	(function() {
-
-		_vds.push([ 'setAccountId', 'b0d18e1f996f733e' ]);
-		_vds.push([ 'setCS1', 'user_id', user_id ]);
-		_vds.push([ 'setCS2', 'company_id', company_id ]);
-		_vds.push([ 'setCS3', 'user_name', company_name ]);
-		_vds.push([ 'setCS3', 'company_name', company_name ]);
-
-		(function() {
-			var vds = document.createElement('script');
-			vds.type = 'text/javascript';
-			vds.async = true;
-			vds.src = ('https:' == document.location.protocol ? 'https://'
-					: 'http://')
-					+ 'dn-growing.qbox.me/vds.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(vds, s);
-		})();
-	})();
-</script>
- <script>
-	//判断当前浏览类型
-	function checkBrowserType() {
-		var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
-		var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
-		var isIE = userAgent.indexOf("compatible") > -1
-				&& userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
-		var isEdge = userAgent.indexOf("Windows NT 6.1; Trident/7.0;") > -1
-				&& !isIE; //判断是否IE的Edge浏览器
-		var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器
-		var isSafari = userAgent.indexOf("Safari") > -1
-				&& userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器
-		var isChrome = userAgent.indexOf("Chrome") > -1
-				&& userAgent.indexOf("Safari") > -1; //判断Chrome浏览器
-
-		if (isIE) {
-			var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
-			reIE.test(userAgent);
-			var fIEVersion = parseFloat(RegExp["$1"]);
-			if (fIEVersion == 7) {
-				return "IE7";
-			} else if (fIEVersion == 8) {
-				return "IE8";
-			} else if (fIEVersion == 9) {
-				return "IE9";
-			} else if (fIEVersion == 10) {
-				return "IE10";
-			} else if (fIEVersion == 11) {
-				return "IE11";
-			} else {
-				return "0"
-			}//IE版本过低
-		}//isIE end
-
-		if (isFF) {
-			return "FF";
-		}
-		if (isOpera) {
-			return "Opera";
-		}
-		if (isSafari) {
-			return "Safari";
-		}
-		if (isChrome) {
-			return "Chrome";
-		}
-		if (isEdge) {
-			return "Edge";
-		}
-	}//myBrowser() end
-	var _t = checkBrowserType();
-	if (_t == "IE7" || _t == "IE8" || _t == "0") {
-		if (document.getElementById("borwserTips") == undefined) {
-			var div = document.createElement("div");
-			div.setAttribute("id", "borwserTips");
-			var txt = document
-					.createTextNode("抱歉，你所用的浏览器版本过低，导致部分内容无法正常使用，可考虑升级IE9及以上版本或更换谷歌，火狐等浏览器进行使用，体验更佳哟。");
-			div.appendChild(txt);
-			div.style.background = "#fef9e5";
-			div.style.color = "#ff5202";
-			div.style.fontSize = "14px";
-			div.style.textAlign = "center";
-			div.style.height = "30px";
-			div.style.lineHeight = "30px";
-			var firstChild = document.body;
-			firstChild.insertBefore(div, firstChild.childNodes[0])
-		}
-	}
-</script>
-<!-- <script type='text/javascript'> -->
+<script type='text/javascript'>
+	var document=$('#login')
 </script>
 </body>
 </html>

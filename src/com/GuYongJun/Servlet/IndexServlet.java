@@ -36,8 +36,7 @@ public class IndexServlet extends HttpServlet {
 		List<jobMessage> messageList=new ArrayList<jobMessage>();
 		messageList=mainService.getJobMessage();
 		request.setAttribute("messageList", messageList);
-		request.getRequestDispatcher("/home.jsp").forward(request, response);
-		
+		request.getRequestDispatcher("/home.jsp").forward(request, response);	
 	}
 
 	/**
