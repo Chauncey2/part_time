@@ -16,8 +16,30 @@ public class jobMessage {
 	private String Jlocal;		//所在区县
 	private  Date Jreleasetime;	//信息发布时间
 	private String description; //工作职位描述
-	
+	private String contacts;    //联系人
+	private String ctel;		//联系电话
 	 
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getContacts() {
+		return contacts;
+	}
+	public void setContacts(String contacts) {
+		this.contacts = contacts;
+	}
+	public String getCtel() {
+		return ctel;
+	}
+	public void setCtel(String ctel) {
+		this.ctel = ctel;
+	}
 	public String getJname() {
 		return Jname;
 	}
@@ -66,16 +88,18 @@ public class jobMessage {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	/**
 	 * 重写toString()方法方便调试
 	 * */
 	@Override
 	public String toString() {
-		return "jobMessage [Jname=" + Jname + ", Cname=" + Cname + ", Jtime=" + Jtime + ", JAddress=" + JAddress
-				+ ", Jsalary=" + Jsalary + ", Jlocal=" + Jlocal + ", Jreleasetime=" + Jreleasetime + ", description="
-				+ description + "]";
+		return "jobMessage [id=" + id + ", Jname=" + Jname + ", Cname=" + Cname + ", Jtime=" + Jtime + ", JAddress="
+				+ JAddress + ", Jsalary=" + Jsalary + ", Jlocal=" + Jlocal + ", Jreleasetime=" + Jreleasetime
+				+ ", description=" + description + ", contacts=" + contacts + ", ctel=" + ctel + "]";
 	}
+	
+	
 	
 	
 	

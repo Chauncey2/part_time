@@ -92,7 +92,7 @@
         <ul class="nav">
             <li>首页</li>
             <li class="line"></li>
-            <li><a href="../recruit/recruitManagement.html" login="true">招聘管理</a></li>
+            <li><a href="recruitManagement.jsp" login="true">招聘管理</a></li>
             <!--<li class="line"></li>-->
         </ul>
         <div class="header-r clearfix">

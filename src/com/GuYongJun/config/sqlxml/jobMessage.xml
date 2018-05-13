@@ -15,10 +15,12 @@
 		<result column="Jlocal" jdbcType="VARCHAR" property="Jlocal"/>
 		<result column="Jreleasetime" jdbcType="TIMESTAMP" property="Jreleasetime"/>
 		<result column="description" jdbcType="VARCHAR" property="description"/>
+		<result column="contacts" jdbcType="VARCHAR" property="contacts"/>
+		<result column="ctel" jdbcType="VARCHAR" property="ctel"/>
 	</resultMap>
 	
 	<select id="queryJobMessage" parameterType="com.GuYongJun.reality.jobMessage" resultMap="jobMessageResult">
-		SELECT id,Jname,Cname,Jtime,JAddress,Jsalary,Jlocal,Jreleasetime,description FROM jobmessage WHERE 1=1
+		SELECT id,Jname,Cname,Jtime,JAddress,Jsalary,Jlocal,Jreleasetime,description,contacts,ctel FROM jobmessage WHERE 1=1
 	</select>
 	<!--  
 	<select id="queryUserInfo" parameterType="com.GuYongJun.reality.userBean" resultMap="userInfoResult">
