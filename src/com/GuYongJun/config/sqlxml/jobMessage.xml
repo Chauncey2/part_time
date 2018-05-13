@@ -22,6 +22,12 @@
 	<select id="queryJobMessage" parameterType="com.GuYongJun.reality.jobMessage" resultMap="jobMessageResult">
 		SELECT id,Jname,Cname,Jtime,JAddress,Jsalary,Jlocal,Jreleasetime,description,contacts,ctel FROM jobmessage WHERE 1=1
 	</select>
+	
+	<insert id="postJobMessage" parameterType="com.GuYongJun.reality.jobMessage">
+		INSERT INTO jobmessage(Jname,Cname,Jtime,JAddress,Jsalary,Jlocal,Jreleasetime,description,contacts,ctel)
+			VALUES(#{Jname},#{Cname},#{Jtime},#{JAddress},#{Jsalary},#{Jlocal},#{Jreleasetime},#{description}
+			,#{contacts},#{ctel})
+	</insert>
 	<!--  
 	<select id="queryUserInfo" parameterType="com.GuYongJun.reality.userBean" resultMap="userInfoResult">
 		select id,account,password,nickname,realname,tel,email,regTime,usertype from userinfo where 1=1 

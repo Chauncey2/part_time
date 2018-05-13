@@ -19,9 +19,6 @@ public class jobMessage {
 	private String contacts;    //联系人
 	private String ctel;		//联系电话
 	 
-	
-	
-	
 	public int getId() {
 		return id;
 	}

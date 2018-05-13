@@ -9,6 +9,8 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- Filter -->
   <filter>
     <filter-name>IndexFilter</filter-name>
     <filter-class>com.GuYongJun.Filter.IndexFilter</filter-class>
@@ -18,6 +20,10 @@
     <url-pattern>/home.jsp</url-pattern>
   </filter-mapping>
   
+  
+   <!-- Servlet -->
+   
+    <!-- userInfoList -->
   <servlet>
     <servlet-name>userInfoList</servlet-name>
     <servlet-class>com.GuYongJun.Servlet.userInfoList</servlet-class>
@@ -27,6 +33,7 @@
     <url-pattern>/userInfo.action</url-pattern>
   </servlet-mapping>
   
+  <!-- loginServlet -->
   <servlet>
     <servlet-name>loginServlet</servlet-name>
     <servlet-class>com.GuYongJun.Servlet.loginServlet</servlet-class>
@@ -36,18 +43,23 @@
     <url-pattern>/loginServlet.action</url-pattern>
   </servlet-mapping>
   
+  <!-- IndexServlet -->
   <servlet>
-  	<servlet-name>IndexServlet</servlet-name>
-  	<servlet-class>com.GuYongJun.Servlet.IndexServlet</servlet-class>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.GuYongJun.Servlet.IndexServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>IndexServlet</servlet-name>
-  	<url-pattern>/index.action</url-pattern>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/index.action</url-pattern>
   </servlet-mapping>
   
-  
-  
-  
-  
-  
+  <!-- postMessageServlet -->
+  <servlet>
+  	<servlet-name>postMessageServlet</servlet-name>
+  	<servlet-class>com.GuYongJun.Servlet.postMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>postMessageServlet</servlet-name>
+  	<url-pattern>/post.action</url-pattern>
+  </servlet-mapping>
 </web-app>

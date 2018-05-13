@@ -18,7 +18,6 @@ public class jobMessageDao {
 	public List<jobMessage> getJobMessage(){
 		
 		List<jobMessage> jobMessageList=new ArrayList<jobMessage>();
-		
 		try {
 			sqlSession=dbaccess.getSqlSession();
 			jobMessage jmessage=new jobMessage();
@@ -35,4 +34,26 @@ public class jobMessageDao {
 		
 		return jobMessageList;
 	}
+
+
+	//[start] 插入兼职信息
+	public int postJobMessage(jobMessage job){
+		int result=0;
+		try {
+			sqlSession=dbaccess.getSqlSession();
+			//插入数据，返回影响的函数
+			result=sqlSession.insert("postJobMessage",job);  
+			//提交事务
+			sqlSession.commit();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			
+			sqlSession.close();
+		}
+		
+		return result;
+	}
+	
 }

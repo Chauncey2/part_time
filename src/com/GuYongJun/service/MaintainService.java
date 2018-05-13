@@ -82,4 +82,13 @@ public class MaintainService {
 		 return jobMessage;	 
 	 }
 	//[end]
+
+	//[start] 插入兼职信息
+	 public int insertJobMessage(jobMessage job){
+		 int result=0;
+		 jobMessageDao jobDao=new jobMessageDao();
+		 result=jobDao.postJobMessage(job);
+		 return result;
+	 }
+	//[end]
 }
