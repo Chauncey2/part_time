@@ -32,5 +32,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   <mappers>
     <mapper resource="com/GuYongJun/config/sqlxml/userInfo.xml"/>
     <mapper resource="com/GuYongJun/config/sqlxml/jobMessage.xml"/>
+     <mapper resource="com/GuYongJun/config/sqlxml/buser.xml"/>
   </mappers>
 </configuration>

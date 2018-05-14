@@ -5,9 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.GuYongJun.Dao.businessInfoDao;
 import com.GuYongJun.Dao.jobMessageDao;
 import com.GuYongJun.Dao.signUpDao;
 import com.GuYongJun.Dao.userInfoDao;
+import com.GuYongJun.reality.businessInfo;
 import com.GuYongJun.reality.jobMessage;
 import com.GuYongJun.reality.userBean;
 import com.google.gson.Gson;
@@ -77,8 +79,7 @@ public class MaintainService {
 		 jobMessageDao jobDao=new jobMessageDao();
 		 List<jobMessage> jobMessage=new ArrayList<jobMessage>();
 		 jobMessage=jobDao.getJobMessage();
-		 SimpleDateFormat sdf=new SimpleDateFormat("yy-MM-dd");
-		
+		 //SimpleDateFormat sdf=new SimpleDateFormat("yy-MM-dd");
 		 return jobMessage;	 
 	 }
 	//[end]
@@ -89,6 +90,20 @@ public class MaintainService {
 		 jobMessageDao jobDao=new jobMessageDao();
 		 result=jobDao.postJobMessage(job);
 		 return result;
+	 }
+	//[end]
+
+	//[start] 查询用户信息
+	 public List<businessInfo> getBusinessInfo(){
+		 List<businessInfo> buList=new ArrayList<businessInfo>();
+		 businessInfoDao buDAO=new businessInfoDao();
+		 try{
+			 buList=buDAO.getBusinessInfo();	
+		 }catch(Exception e){
+			 e.printStackTrace();
+		 }
+			
+		 return buList;
 	 }
 	//[end]
 }

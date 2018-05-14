@@ -114,8 +114,8 @@
 		<div class="content_list_box">
 			<ul class="content_list_wrap" id="content_list_wrap">
 			<!-- EL表达式，批量显示兼职信息 -->
-			<c:forEach items="${messageList}" var="message"
-								varStatus="status">
+			
+			<c:forEach items="${messageList}" var="message"	varStatus="status">
 				<li>
 					<div class="left type_wrap">
 						<i class="type qt"></i>
@@ -131,7 +131,8 @@
 						<i class="icon-time"></i> ${message.jtime}
 					</div>
 				</li>
-			</c:forEach>						
+			</c:forEach>	
+								
 			</ul>
 			
 			<div class="content_page_box">

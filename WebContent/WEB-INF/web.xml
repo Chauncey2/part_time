@@ -9,8 +9,6 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  <!-- Filter -->
   <filter>
     <filter-name>IndexFilter</filter-name>
     <filter-class>com.GuYongJun.Filter.IndexFilter</filter-class>
@@ -19,11 +17,6 @@
     <filter-name>IndexFilter</filter-name>
     <url-pattern>/home.jsp</url-pattern>
   </filter-mapping>
-  
-  
-   <!-- Servlet -->
-   
-    <!-- userInfoList -->
   <servlet>
     <servlet-name>userInfoList</servlet-name>
     <servlet-class>com.GuYongJun.Servlet.userInfoList</servlet-class>
@@ -32,8 +25,6 @@
     <servlet-name>userInfoList</servlet-name>
     <url-pattern>/userInfo.action</url-pattern>
   </servlet-mapping>
-  
-  <!-- loginServlet -->
   <servlet>
     <servlet-name>loginServlet</servlet-name>
     <servlet-class>com.GuYongJun.Servlet.loginServlet</servlet-class>
@@ -42,8 +33,6 @@
     <servlet-name>loginServlet</servlet-name>
     <url-pattern>/loginServlet.action</url-pattern>
   </servlet-mapping>
-  
-  <!-- IndexServlet -->
   <servlet>
     <servlet-name>IndexServlet</servlet-name>
     <servlet-class>com.GuYongJun.Servlet.IndexServlet</servlet-class>
@@ -52,14 +41,42 @@
     <servlet-name>IndexServlet</servlet-name>
     <url-pattern>/index.action</url-pattern>
   </servlet-mapping>
-  
-  <!-- postMessageServlet -->
   <servlet>
-  	<servlet-name>postMessageServlet</servlet-name>
-  	<servlet-class>com.GuYongJun.Servlet.postMessageServlet</servlet-class>
+    <servlet-name>postMessageServlet</servlet-name>
+    <servlet-class>com.GuYongJun.Servlet.postMessageServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>postMessageServlet</servlet-name>
-  	<url-pattern>/post.action</url-pattern>
+    <servlet-name>postMessageServlet</servlet-name>
+    <url-pattern>/post.action</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>noAuditServlet</servlet-name>
+    <servlet-class>com.GuYongJun.Servlet.noAuditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>noAuditServlet</servlet-name>
+    <url-pattern>/noAudit.action</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>recruitManagementServlet</servlet-name>
+    <servlet-class>com.GuYongJun.Servlet.recruitManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>recruitManagementServlet</servlet-name>
+    <url-pattern>/recruit.action</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>businessManagementServlet</servlet-name>
+  	<servlet-class>com.GuYongJun.Servlet.businessManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>businessManagementServlet</servlet-name>
+  	<url-pattern>/busManage.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
 </web-app>

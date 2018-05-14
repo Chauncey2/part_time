@@ -19,6 +19,26 @@ public class jobMessage {
 	private String contacts;    //联系人
 	private String ctel;		//联系电话
 	 
+	
+	
+	
+	public jobMessage() {
+		//super();
+	}
+	public jobMessage(String jname, String cname, Date jtime, String jAddress, String jsalary, String jlocal,
+			Date jreleasetime, String description, String contacts, String ctel) {
+		//super();
+		Jname = jname;
+		Cname = cname;
+		Jtime = jtime;
+		JAddress = jAddress;
+		Jsalary = jsalary;
+		Jlocal = jlocal;
+		Jreleasetime = jreleasetime;
+		this.description = description;
+		this.contacts = contacts;
+		this.ctel = ctel;
+	}
 	public int getId() {
 		return id;
 	}
