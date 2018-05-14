@@ -1,0 +1,248 @@
+.mvuipc-autocomplete {
+    position: relative
+}
+
+.mvuipc-autocomplete-input {
+    display: block;
+    float: left;
+    height: 28px;
+    width: 260px;
+    border: 1px solid #cdcdcd;
+    line-height: 28px;
+    font-size: 13px;
+    color: #4b4b4b;
+    text-indent: 10px;
+    border-right: none
+}
+
+.mvuipc-autocomplete-btn {
+    float: left;
+    height: 30px;
+    width: 50px;
+    background-color: #69e;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.mvuipc-autocomplete-btn:hover {
+    background-color: #7aa8f4;
+}
+
+.mvuipc-autocomplete-triangle-btn {
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    border-left-color: #f1f1f1;
+    background-color: #fff;
+    cursor: pointer
+}
+
+.mvuipc-autocomplete-triangle-btn:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #c9c9c9;
+    margin: -1.5px 0 0 -3px
+}
+
+.mvuipc-autocomplete-list {
+    position: absolute;
+    top: 37px;
+    width: 259px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    display: none;
+    cursor: pointer
+}
+
+.mvuipc-autocomplete-list li {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 5px 5px 5px 10px;
+    color: #4b4b4b
+}
+
+.mvuipc-autocomplete-list .active {
+    background: #f0f0f0;
+}
+
+body,
+dd,
+dl,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-indent: 0
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    background: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    outline: none;
+    -webkit-appearance: none
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    border: none;
+    vertical-align: top
+}
+
+table {
+    border-collapse: collapse
+}
+
+textarea {
+    resize: none;
+    overflow: auto
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.no-wrap {
+    white-space: nowrap
+}
+
+.mvuipc-simselect {
+    position: relative;
+    width: 88px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    cursor: pointer
+}
+
+.mvuipc-simselect.active .mvuipc-simselect-text {
+    color: #4b4b4b
+}
+
+.mvuipc-simselect.disable {
+    border: 1px solid #e9e9e9;
+    background-color: #fafafa
+}
+
+.mvuipc-simselect.disable .mvuipc-simselect-text {
+    color: #dcdcdc
+}
+
+.mvuipc-simselect.disable .mvuipc-simselect-btn {
+    background-color: #fafafa
+}
+
+.mvuipc-simselect input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    border: 0
+}
+
+.mvuipc-simselect-text {
+    height: 28px;
+    line-height: 28px;
+    color: #aaa;
+    font-size: 13px;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mvuipc-simselect-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 28px;
+    width: 25px;
+    border-left: 1px solid #f1f1f1;
+    background-color: #fff
+}
+
+.mvuipc-simselect-btn:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #c9c9c9;
+    margin: -1.5px 0 0 -3px
+}
+
+.mvuipc-simselect-list {
+    width: 88px;
+    border: 1px solid #cdcdcd;
+    position: absolute;
+    left: -1px;
+    top: 35px;
+    background-color: #fff
+}
+
+.mvuipc-simselect-list.show {
+    display: block
+}
+
+.mvuipc-simselect-list.hide {
+    display: none
+}
+
+.mvuipc-simselect-list li {
+    line-height: 24px;
+    color: #4b4b4b;
+    font-size: 12px;
+    padding: 5px 5px 5px 10px;
+}
+
+.mvuipc-simselect-list li.active {
+    background-color: #fafafa
+}

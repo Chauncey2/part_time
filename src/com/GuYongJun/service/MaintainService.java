@@ -94,6 +94,18 @@ public class MaintainService {
 	//[end]
 
 	//[start] 查询用户信息
+	 public List<businessInfo> getBusinessInfo(businessInfo business){
+		 List<businessInfo> buList=new ArrayList<businessInfo>();
+		 businessInfoDao buDAO=new businessInfoDao();
+		 try{
+			 buList=buDAO.getBusinessInfoByAccount(business);	
+		 }catch(Exception e){
+			 e.printStackTrace();
+		 }
+			
+		 return buList;
+	 }
+	 
 	 public List<businessInfo> getBusinessInfo(){
 		 List<businessInfo> buList=new ArrayList<businessInfo>();
 		 businessInfoDao buDAO=new businessInfoDao();

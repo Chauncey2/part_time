@@ -1,0 +1,507 @@
+.form-item {
+    line-height: 30px;
+    zoom: 1;
+    clear: both;
+}
+
+.form-item .label {
+    float: left;
+    display: inline-block;
+    line-height: 30px;
+    min-width: 60px;
+    text-align: right;
+}
+
+.jz-radio,
+.jz-checkbox,
+.form-radio,
+.form-checkbox {
+    margin: 0 5px 0 0;
+    padding: 0;
+    font-size: 12px;
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    vertical-align: -2px;
+    *vertical-align: middle;
+}
+
+.jz-txt,
+.form-text {
+    line-height: 16px;
+    height: 16px;
+    padding: 6px 9px;
+    border: solid 1px #ddd;
+    color: #999;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.jz-txt:disabled,
+.form-text:disabled {
+    background-color: #fafafa;
+    border: 1px solid #e9e9e9;
+    color: #dcdcdc;
+}
+
+.jz-textarea,
+.form-textarea {
+    margin: 0;
+    padding: 2px 9px;
+    border: solid 1px #cdcdcd;
+    color: #4b4b4b;
+    font-size: 14px;
+    line-height: 22px;
+    resize: none;
+    vertical-align: middle;
+}
+
+.jz-label {
+    font-size: 14px;
+    color: #4b4b4b;
+    display: inline;
+}
+
+.form-text::-ms-clear {
+    display: none;
+}
+
+::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+::-moz-placeholder {
+    color: #626262;
+}
+
+input:-moz-placeholder {
+    color: #aaa;
+}
+
+.form-date {
+    border: solid 1px #ddd;
+    padding: 0 6px 0 9px;
+    height: 28px;
+    line-height: 28px;
+    width: 180px;
+    font-size: 0;
+    position: relative;
+}
+
+.form-date span {
+    float: left;
+    display: inline-block;
+    line-height: 28px;
+    font-size: 14px;
+    color: #999;
+}
+
+.form-date input {
+    color: #4b4b4b;
+    padding: 6px 9px;
+    line-height: 16px;
+    height: 16px;
+    border: none 0;
+    width: 100px;
+    font-size: 14px;
+}
+
+.form-l-date {
+    width: 190px;
+}
+
+.form-l-date input {
+    width: 170px;
+}
+
+.form-date i,
+.form-tips i {
+    background: url("../../../../image/jianzhi/web/b/b_ico.png?v=171110") no-repeat;
+}
+
+.form-date i {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    height: 16px;
+    width: 16px;
+    background-position: 0 -97px;
+    cursor: pointer;
+}
+
+.form-select-wrap {
+    border: solid 1px #ddd;
+    line-height: 28px;
+    height: 28px;
+    position: relative;
+    *border-color: transparent;
+}
+
+.form-select-wrap > select {
+    border: none 0;
+    line-height: 18px;
+    padding: 4px 30px 2px 10px;
+    padding: 5px 5px 5px 10px\9;
+    font-size: 14px;
+    color: #4b4b4b;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+.form-select-wrap.disabled {
+    border: 1px solid #e9e9e9;
+    background-color: #fafafa;
+}
+
+.form-select-wrap.disabled > select {
+    color: #dcdcdc;
+}
+
+.form-select-wrap:after,
+.form-select-wrap:before {
+    display: block;
+    display: none\9;
+    content: '';
+    clear: both;
+}
+
+.form-select-wrap:after {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    border-top: solid 5px #c9c9c9;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+}
+
+.form-select-wrap:before {
+    position: absolute;
+    right: 29px;
+    top: 0;
+    border-left: solid 1px #f2f2f2;
+    height: 28px;
+}
+
+.btn-yellow {
+    display: inline-block;
+    background-color: #69e;
+    color: #fff;
+    overflow: visible;
+    border: 1px solid #69e;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.btn-yellow:hover {
+    background-color: #7aa8f4;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-gray {
+    display: inline-block;
+    background-color: #f5f5f5;
+    color: #707070;
+    border: solid 1px #dcdcdc;
+    overflow: visible;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.btn-gray:hover {
+    background-color: #f9f9f9;
+}
+
+.btn-light {
+    display: inline-block;
+    background-color: #f5f5f5;
+    color: #999;
+    border: solid 1px #f5f5f5;
+    overflow: visible;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.btn-group .btn-light {
+    cursor: not-allowed;
+}
+
+.btn-light:hover {
+    background-color: #f5f5f5;
+}
+
+.l-btn {
+    width: 120px;
+    height: 45px;
+    font: 400 16px/45px 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+input[type=submit].l-btn,
+input[type=reset].l-btn,
+input[type=button].l-btn,
+button.l-btn {
+    line-height: 40px;
+}
+
+.m-btn {
+    height: 30px;
+    width: 50px;
+    font-size: 12px;
+}
+
+.form-tips {
+    line-height: 18px;
+    color: #707070;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-tips i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 5px;
+}
+
+.form-tips .error-msg {
+    display: block;
+}
+
+.form-tips .msg i {
+    background-position: -104px -100px;
+    margin-left: 5px;
+}
+
+.form-tips .error-msg i {
+    background-position: -104px -71px;
+}
+
+.txt-group .p1 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4b4b4b;
+}
+
+.txt-group .p2 {
+    font: 400 16px/26px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #4b4b4b;
+}
+
+.txtC {
+    text-align: center;
+}
+
+.txt-group {
+    text-align: center;
+    width: 410px;
+    margin: 0 auto;
+}
+
+.pop-tb-wrap {
+    margin: 15px auto 0;
+    max-height: 205px;
+    overflow-y: auto;
+    width: 318px;
+}
+
+.bdr {
+    border: solid 1px #ddd;
+}
+
+.pop-tb {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.pop-tb td {
+    padding: 5px 0 5px 10px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.txt-group .p1-inner {
+    text-align: left;
+    padding-left: 35px;
+}
+
+.uploadFile-area {
+    line-height: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.uploadFile-txt {
+    font-size: 14px;
+    color: #4b4b4b;
+    text-align: left;
+    border: solid 1px #ddd;
+    line-height: 28px;
+    padding: 0 10px;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.uploadFile-btn {
+    padding: 0 10px;
+    line-height: 28px;
+    vertical-align: top;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.uploadFile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    padding: 5px 0;
+    opacity: 0.01;
+    filter: alpha(opacity = 1);
+}
+
+.jz-words {
+    color: #707070;
+    font-size: 14px;
+}
+
+.jz-sel {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+
+.jz-sel-txt {
+    border: solid 1px #cdcdcd;
+    line-height: 16px;
+    height: 16px;
+    padding: 6px 29px 6px 9px;
+    font-size: 14px;
+    color: #4b4b4b;
+    display: inline;
+}
+
+.jz-sel-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../../../../image/jianzhi/web/b/pub_resume_ico.png) no-repeat;
+    background-position: 0px 1px;
+    cursor: pointer;
+}
+
+.jz-resume-sel-hover {
+    z-index: 9999;
+}
+
+.jz-resume-sel-hover .sel-option,
+.resume-sel-hover .district-option {
+    display: block;
+}
+
+.jz-sel-option,
+.jz-sel-option-h {
+    padding: 1px;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    background: #fff;
+    border: solid 1px #ccc;
+    box-shadow: 0 0 3px #e5e5e5;
+    z-index: 10;
+    display: none;
+}
+
+.jz-sel-option-h {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.jz-sel-option a,
+.jz-sel-option-h a {
+    display: block;
+    line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+    padding-left: 5px;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.jz-sel-option a:hover,
+.jz-sel-option-h a:hover {
+    background-color: #e7e7e7;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.jz-district-option {
+    width: 480px;
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 0 3px #E5E5E5;
+    display: none;
+    left: 0;
+    padding: 1px;
+    position: absolute;
+    top: 28px;
+    z-index: 2;
+}
+
+.jz-option-close {
+    color: #b3b3b3;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    right: 7px;
+    top: -2px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a.jz-option-close,
+a.jz-option-close:hover {
+    text-decoration: none;
+}
+
+a.jz-option-close:hover {
+    color: #f98009;
+}
+
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+    .form-select-wrap > select {
+        padding-right: 5px;
+    }
+
+    .form-select-wrap:after,
+    .form-select-wrap:before {
+        display: none;
+    }
+
+}

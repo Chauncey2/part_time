@@ -34,8 +34,8 @@
         <a class="location" href="#">淮安</a>
         <ul class="nav" data="index">
             <li><a class="current">首页</a></li>
-            <li><a href="home.jsp" class="zhiweiCity"  dmaLog="/jianzhi/index@city=huaian@atype=click@ca_source=pc@ca_from=zhiwei" >职位</a></li>
-            <li><a href="business_index.jsp" onclick="_hmt.push(['_trackEvent', 'pc_home_shanjiafatie', 'click'])"  target="_blank" rel="nofollow"  dmaLog="/jianzhi/index@city=huaian@atype=click@ca_source=pc@ca_from=qiyeban" >企业版</a></li>
+            <li><a href="home.jsp" class="zhiweiCity"  dmaLog="/jianzhi/index@city=huaian@atype=click@ca_source=pc@ca_from=zhiwei" >学生入口</a></li>
+            <li><a href="business_index.jsp" onclick="_hmt.push(['_trackEvent', 'pc_home_shanjiafatie', 'click'])"  target="_blank" rel="nofollow"  dmaLog="/jianzhi/index@city=huaian@atype=click@ca_source=pc@ca_from=qiyeban" >商家入口</a></li>
         </ul>
         <div class="login-info">
           <a class="login-reg jz_lg" href="login.jsp" rel="nofollow">注册登录</a>

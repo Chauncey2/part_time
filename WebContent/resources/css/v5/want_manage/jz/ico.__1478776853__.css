@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+.word-bu-ico,
+.word-fu-ico,
+.word-re-ico,
+.word-jian-ico,
+.db-icon,
+.db-min-ico,
+.word-ti-ico,
+.word-jiang-ico {
+    background: url("../../../../images/v5/job/jz/jz_db_ico1.png") no-repeat;
+}
+
+.word-bu-ico,
+.word-fu-ico,
+.word-re-ico,
+.word-jian-ico,
+.word-ti-ico,
+.word-jiang-ico {
+    padding: 8px;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.word-bu-ico {
+    background-position: 0 0;
+}
+
+.word-fu-ico {
+    background-position: -26px 0;
+}
+
+.word-re-ico {
+    background-position: -52px 0;
+}
+
+.word-jian-ico {
+    background-position: -78px 0;
+}
+
+.word-ti-ico {
+    background-position: -129px 0;
+}
+
+.word-jiang-ico {
+    background-position: -182px 0;
+}
+
+.db-icon {
+    height: 24px;
+    width: 90px;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    background-position: 0 -26px;
+}
+
+.db-min-ico {
+    background-position: -128px -31px;
+    padding: 9px 8px;
+    width: 48px;
+    font-size: 0;
+}
+
+.word-ico1,
+.word-ico2,
+.word-ico3,
+.word-ico4 {
+    display: inline-block;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #a9c365;
+}
+
+.word-ico2 {
+    background-color: #88b9b9;
+}
+
+.word-ico3 {
+    background-color: #de958f;
+}
+
+.word-ico4 {
+    background-color: #99b3dd;
+}
+
+/**add share**/
+.share-ico-wrap {
+    position: relative;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.share-ico-hover {
+    border-color: #e6e6e6;
+}
+
+.share-ico {
+    position: relative;
+    top: 2px;
+    left: 0;
+    padding: 0 5px;
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    z-index: 10;
+    background: #fff url("../../../../images/jianzhi/web/b/b_ico.png") no-repeat;
+    background-position: -150px -109px;
+}
+
+.share-way {
+    position: absolute;
+    top: 16px;
+    left: -1px;
+    display: none;
+    padding: 2px 5px 0;
+    width: 105px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    z-index: 9;
+}
+
+.share-ico-hover .share-way {
+    display: block;
+}
+
+.share-way li {
+    line-height: 28px;
+    font-size: 12px;
+    color: #4b4b4b;
+    cursor: pointer;
+}
+
+.share-way li i {
+    float: left;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 8px 5px 0 0;
+    background-image: url("../../../../images/jianzhi/web/b/b_ico.png");
+    background-repeat: no-repeat;
+}
+
+.share-way-ico1 {
+    background-position: -155px -136px;
+}
+
+.share-way-ico2 {
+    background-position: -155px -161px;
+}
+
+.share-way-ico3 {
+    background-position: -155px -188px;
+}
+
+/* FAQ */
+.faq .b-menu dt i {
+    background-image: url("../../../../images/jianzhi/web/b/faq_ico.png");
+}
+.list-ico1 {
+    background-position: 0 0;
+}
+.cur .list-ico1,a:hover .list-ico1 {
+    background-position: -32px 0;
+}
+.list-ico2 {
+    background-position: 0 -32px;
+}
+.cur .list-ico2,a:hover .list-ico2 {
+    background-position: -32px -32px;
+}
+.list-ico3 {
+    background-position: 0 -64px;
+}
+.cur .list-ico3,a:hover .list-ico3 {
+    background-position: -32px -64px;
+}
+.list-ico4 {
+    background-position: 0 -96px;
+}
+.cur .list-ico4,a:hover .list-ico4 {
+    background-position: -32px -96px;
+}
+.list-ico5 {
+    background-position: 0 -128px;
+}
+.cur .list-ico5,a:hover .list-ico5 {
+    background-position: -32px -128px;
+}
+.list-ico6 {
+    background-position: 0 -160px;
+}
+.cur .list-ico6,a:hover .list-ico6 {
+    background-position: -32px -160px;
+}
+.list-ico7 {
+    background-position: 0 -192px;
+}
+.cur .list-ico7,a:hover .list-ico7 {
+    background-position: -32px -192px;
+}

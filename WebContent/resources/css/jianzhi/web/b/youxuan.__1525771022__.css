@@ -1,0 +1,70 @@
+.see-list {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -208px;
+    background-color: #727272;
+    border-radius: 2px;
+    padding: 10px 0 0 20px;
+    max-width: 385px;
+    z-index: 101;
+}
+
+.see-list:before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: -6px;
+    margin-left: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #727272;
+}
+
+.see-list span {
+    float: left;
+    margin-bottom: 10px;
+    width: 63px;
+    overflow: hidden;
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-size: 14px;
+}
+
+.see-list-em {
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+li .see-list span {
+    color: #fff;
+}
+
+.bList-item-num-pos{
+    float: left;
+    height: 13px;
+    line-height: 13px;
+    color: #999;
+    margin-left: 15px;
+}
+
+.bList-item-num-pos .fc-70{
+    color: #707070;
+}
+
+.bList-t {
+    background-color: #fff;
+    padding: 30px 20px;
+}
+

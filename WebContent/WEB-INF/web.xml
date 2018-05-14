@@ -65,18 +65,12 @@
     <servlet-name>recruitManagementServlet</servlet-name>
     <url-pattern>/recruit.action</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  	<servlet-name>businessManagementServlet</servlet-name>
-  	<servlet-class>com.GuYongJun.Servlet.businessManagementServlet</servlet-class>
+    <servlet-name>businessManagementServlet</servlet-name>
+    <servlet-class>com.GuYongJun.Servlet.businessManagementServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>businessManagementServlet</servlet-name>
-  	<url-pattern>/busManage.action</url-pattern>
+    <servlet-name>businessManagementServlet</servlet-name>
+    <url-pattern>/busManage.action</url-pattern>
   </servlet-mapping>
-  
-  
-  
-  
-  
 </web-app>

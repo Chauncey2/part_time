@@ -1,0 +1,227 @@
+.bg-f2 {
+	background-color: #f2f2f2;
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #383C49;
+    box-shadow: 0 8px 4px 0 rgba(242, 242, 242, 0.50);
+    z-index: 998;
+}
+
+.mod-container {
+	padding-top: 60px;
+}
+
+/**sidebar start**/
+.mod-sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 200px;
+    border-right: solid 1px #f0f0f0;
+    background-color: #fff;
+}
+
+.menu dt {
+    padding: 15px 0 15px 30px;
+    line-height: 24px;
+}
+
+.menu dl a {
+    display: inline-block;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+.menu dt a {
+    position: relative;
+    padding-left: 30px;
+}
+
+.menu dt.active {
+    background-color: #eff7ff;
+}
+
+.menu dt.active a,
+.menu a.active {
+	font-weight: 700;
+    color: #69e;
+}
+
+.menu dl dd {
+    margin-top: 15px;
+    padding-left: 60px;
+}
+
+.menu dl dt + dd {
+    margin-top: 5px;
+}
+
+.menu dt a i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../../images/jianzhi/web/b/b_ico_v3.png");
+    /*background-position: no-repeat;*/
+    background-repeat: no-repeat;
+}
+
+/**sidebar end**/
+.mod-content {
+    padding-left: 220px;
+    padding-right: 20px;
+    min-width: 765px;
+}
+
+.mod-search {
+    padding:30px 20px;
+    background-color: #fff;
+    line-height: 30px;
+    color: #4b4b4b;
+}
+
+.icon-noData-wrap {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-93px 0 0 -78px;
+}
+
+.noData-txt {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ccc;
+}
+
+.icon-noData {
+    display: inline-block;
+    width: 156px;
+    height: 146px;
+}
+
+/********
+icon add area
+**************/
+.icon {
+    background-image: url("../../../../images/jianzhi/web/b/b_ico_v3.png");
+    background-repeat: no-repeat;
+    /*background-position: no-repeat;*/
+}
+
+.icon-suc-s,
+.icon-warning-s {
+    display: inline-block;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+}
+
+.icon-bojin {
+    background-position: 0 0;
+}
+
+.icon-dianjin {
+    background-position: 0 -20px;
+}
+
+.icon-edu {
+    background-position: 0 -40px;
+}
+
+.icon-tegong {
+    background-position: 0 -60px;
+}
+
+.icon-hetong {
+    background-position: 0 -80px;
+}
+
+.icon-vip {
+    background-position: 0 -100px;
+}
+
+.icon-normal {
+    background-position: 0 -120px;
+}
+
+.icon-wallet {
+    background-position: 0 -140px;
+}
+
+.icon-companyInfo {
+    background-position: 0 -160px;
+}
+
+.icon-youxuan {
+    background-position: 0 -180px;   
+}
+
+.icon-zuanshi {
+    background-position: 0 -200px;   
+}
+
+.active .icon-bojin {
+    background-position: -20px 0;
+}
+
+.active .icon-dianjin {
+    background-position: -20px -20px;
+}
+
+.active .icon-edu {
+    background-position: -20px -40px;
+}
+
+.active .icon-tegong {
+    background-position: -20px -60px;
+}
+
+.active .icon-hetong {
+    background-position: -20px -80px;
+}
+
+.active .icon-vip {
+    background-position: -20px -100px;
+}
+
+.active .icon-normal {
+    background-position: -20px -120px;
+}
+
+.active .icon-wallet {
+    background-position: -20px -140px;
+}
+
+.active .icon-companyInfo {
+    background-position: -20px -160px;
+}
+
+.active .icon-youxuan {
+    background-position: -20px -180px;   
+}
+
+.active .icon-zuanshi {
+    background-position: -20px -200px;   
+}
+
+.icon-suc-s {
+    background-position: -40px 0;
+}
+
+.icon-warning-s {
+    background-position: -67px 0;
+}
+
+.icon-noData {
+    background-position: -44px -154px;
+}

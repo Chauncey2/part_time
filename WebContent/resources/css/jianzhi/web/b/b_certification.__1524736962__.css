@@ -1,0 +1,824 @@
+@charset "utf-8";
+
+/* icon */
+.question-items-list li i,
+.icon-suc-s,
+.icon-warning-s,
+.icon-fail-s,
+.icon-warning-blue-s {
+    background-image: url("../../../../images/jianzhi/web/b/b_ico.png");
+    background-repeat: no-repeat;
+}
+
+.question-items-list li i {
+    position: absolute;
+    background-position: -383px -135px;
+    width: 14px;
+    height: 14px;
+    left: 20px;
+    top: 15px;
+}
+
+.icon-suc-s,
+.icon-fail-s,
+.icon-warning-s,
+.icon-warning-blue-s {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.icon-suc-s {
+    background-position: -487px -185px;
+}
+
+.icon-fail-s {
+    background-position: -487px -210px;
+}
+
+.icon-warning-s {
+    background-position: -487px -160px;
+}
+
+.icon-warning-blue-s {
+    background-position: -487px -50px;
+}
+
+/* superform */
+.preview-form-body {
+	position: relative;
+    background-color: #fff;
+    padding-bottom: 100px;
+    overflow: hidden;
+	min-width: 765px;
+}
+
+.form-title h2 {
+    font: 700 28px/28px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #4B4B4B;
+}
+
+.preview-form-body .question-field-t {
+    margin-right: 380px;
+    margin-left: 70px;
+}
+
+.question-field-t {
+    margin: 30px 30px 20px;
+    padding: 20px 0;
+    border-bottom: dashed 1px #e6e6e6;
+    line-height: 20px;
+}
+
+.question-field-t h3 {
+    display: inline-block;
+    font: 700 20px/1 'hiragino sans gb', 'Microsoft YaHei';
+    color: #4b4b4b;
+}
+
+.question-field-t .sub {
+    font-size: 12px;
+    color: #999;
+}
+
+.question-field-t .sub-large {
+	font-size: 14px;
+	color: #707070;
+	padding-left: 10px;
+}
+
+.question-field-item dt {
+    position: relative;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #707070;
+    z-index: 3;
+}
+
+.question-field-item dt b {
+    display: inline-block;
+    color: #ff7878;
+    margin-left: 5px;
+}
+
+.ui-upload-wrap {
+    font-size: 0px;
+    margin-left: -19px;
+}
+
+.ui-upload-wrap .legend-item {
+    display: inline-block;
+    width: 185px;
+    margin-left: 19px;
+    margin-right: 0;
+}
+
+.ui-upload-wrap .legend-item .upload-ico {
+    display: block;
+}
+
+.legend-item-has-txt .upload-ico {
+    top: 40px;
+}
+
+.legend-item-txt {
+    position: absolute;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    bottom: 27px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.form-optBtn button {
+    width: 108px;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    font: 400 16px/28px 'hiragino sans gb', 'Microsoft YaHei';
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.form-optBtn .btn-yellow {
+    border-color: #69e;
+    background-color: #69e;
+    color: #fff;
+}
+
+.form-optBtn .btn-yellow:hover {
+    background-color: #7aa8f4;
+    border-color: #7aa8f4;
+}
+
+.form-optBtn .l-btn {
+    width: 158px;
+}
+
+.question-items-list li a {
+    position: relative;
+    display: block;
+    line-height: 22px;
+    padding: 10px 10px 10px 49px;
+    border: solid 1px #d9d9d9;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.question-items-list li a:hover {
+    text-decoration: none;
+    border-color: #9cf;
+}
+
+.ui-upload-wrap .ui-upload-txt,
+.ui-upload-wrap .ui-input-tip {
+    margin-left: 19px;
+}
+
+/* ceritfication */
+.certification-extend .form-title {
+    position: relative;
+    padding: 50px 50px 30px 70px;
+}
+
+.certification-extend .form-title:before {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #4b4b4b;
+}
+
+.certification-extend .question-field-t {
+    margin-top: 30px;
+}
+
+.question-items {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 380px;
+}
+
+.question-items .question-field-item {
+    padding: 10px 0;
+}
+
+.question-items-t {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #4b4b4b;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e6e6e6;
+}
+
+.question-items-t a {
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.question-items-t a:hover {
+    color: #e30;
+    text-decoration: underline;
+}
+
+.question-items-t .icon-delete {
+    float: right;
+    margin-right: 0;
+}
+
+.question-items-t .icon-edit {
+    float: right;
+}
+
+.form-words-bar {
+    display: block;
+    min-width: 30px;
+    line-height: 44px;
+    color: #707070;
+    font-size: 14px;
+    text-align: center;
+}
+
+.col-47 {
+    float: left;
+    width: 47.5%;
+}
+
+.question-items-preview .question-items-head {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.question-items-preview {
+    border: 1px solid #e6e6e6;
+    margin-left: 70px;
+    margin-right: 330px;
+}
+
+.question-items-body {
+    padding-top: 10px;
+}
+
+.question-items-preview .question-items-body {
+    padding-bottom: 20px;
+}
+
+.question-items-preview .question-field-item {
+    padding: 10px 20px;
+}
+
+.question-items-intro {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4b4b4b;
+}
+
+.question-items-intro span {
+    margin-right: 20px;
+}
+
+.preview-form-body .form-optBtn {
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.question-items-body .mvuipc-calendar {
+    z-index: 13;
+}
+
+.question-items-body .mvuipc-calendar .mvuipc-calendar-input {
+    width: auto;
+}
+
+/* certification pop */
+.choose-pop {
+    padding: 26px;
+}
+
+.choose-pop .question-items-list li {
+    float: left;
+    width: 200px;
+    margin: 20px 0 0 20px;
+    height: 44px;
+}
+
+.choose-pop .question-items-list li.w-col-1 {
+    width: 640px;
+}
+
+.choose-pop .question-items-list li.w-col-2 {
+    width: 310px;
+}
+
+.choose-pop .question-items-list li a {
+    padding-right: 0;
+}
+
+.choose-pop .question-items-list {
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+/* certification states */
+.certification-state .ui-warn,
+.certification-state .ui-suc {
+    padding-left: 170px;
+    padding-bottom: 100px;
+    text-align: left;
+	min-width: 614px;
+}
+
+.certification-info {
+    padding-left: 60px;
+    margin-top: 30px;
+}
+
+.certification-info .info-text {
+    line-height: 24px;
+    font-size: 14px;
+    color: #707070;
+}
+
+.certification-info .info-pic-wrap {
+    margin-top: 16px;
+    margin-bottom: -20px;
+}
+
+.certification-info .info-pic {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 183px;
+    height: 116px;
+    border: 1px solid #d9d9d9;
+}
+
+.certification-top-link {
+    padding-left: 60px;
+    margin-top: 20px;
+}
+
+.certification-top-link a,
+.certification-top-link a:hover,
+.pub-suc .ui-suc-link a,
+.pub-suc .ui-suc-link a:hover {
+    line-height: 24px;
+    font-size: 14px;
+    color: #5ca1e6;
+    text-decoration: none;
+}
+
+/* index */
+.certification-choose {
+    padding: 50px 0 100px;
+    background-color: #fff;
+	min-width: 1126px;
+}
+
+.certification-choose-t {
+    text-align: center;
+    font: 700 20px/28px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #4b4b4b;
+}
+
+.certification-choose-con {
+	box-sizing: border-box;
+    padding: 0 133px;
+	width: 1126px;
+	margin: 50px auto 0;
+}
+
+.certification-choose-item {
+    float: left;
+}
+
+.certification-choose-wrap {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    height: 314px;
+    padding-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .07);
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.certification-choose-wrap:hover {
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .15);
+}
+
+.mar-space {
+    margin: 0 70px;
+}
+
+.choose-area-icon {
+    display: inline-block;
+    width: 62px;
+    height: 48px;
+    font-size: 0;
+    background: url(../../../../images/jianzhi/web/b/certification_icon.png) no-repeat;
+}
+
+.choose-area-icon.icon1 {
+    background-position: 0 0;
+}
+
+.choose-area-icon.icon2 {
+    background-position: -72px 0;
+}
+
+.choose-area-icon.icon3 {
+    background-position: -144px 0;
+}
+
+.choose-area-t {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font: 700 20px/28px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #404040;
+}
+
+.choose-area-text {
+    line-height: 22px;
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 30px;
+}
+
+.choose-area-state {
+    font-size: 0;
+}
+
+.choose-area-state i {
+    float: none;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+
+.choose-area-state span {
+    font-size: 14px;
+    color: #4B4B4B;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+/* certification list */
+.certification-list .question-items-preview {
+    border: none;
+}
+
+.certification-nodate {
+    background-color: #fff;
+    padding: 70px 0 100px;
+    text-align: center;
+}
+
+.nodate-title {
+    margin-bottom: 10px;
+    font: 700 20px/28px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #4b4b4b;
+}
+
+.nodate-text {
+    font-size: 12px;
+    color: #999;
+}
+
+.certification-nodate .btn {
+    margin-top: 50px;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+}
+
+/* certification form */
+.uploader-tip {
+    z-index: 12;
+}
+
+.uploader .demo-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.certification-form {
+    padding-top: 20px;
+}
+
+.certification-form .question-items {
+    margin-top: 0;
+}
+
+.certification-form .question-items-body {
+    padding-top: 0;
+}
+
+.certification-form .question-field-t {
+    margin-top: 10px;
+}
+
+.question-error-field {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #e6e6e6;
+}
+
+.error-field-t {
+    padding-top: 30px;
+    margin-top: 15px;
+}
+
+.error-field-t h3 {
+    font: 700 20px/20px 'hiragino sans gb', 'Microsoft YaHei';
+    color: #ff7878;
+}
+
+.error-item {
+    margin-top: 15px;
+}
+
+.error-item dt,
+.error-item dd {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+    color: #4b4b4b;
+    vertical-align: top;
+}
+
+.error-item .error-list li {
+    margin-bottom: 5px;
+}
+
+.mr100 {
+    margin-right: 100px;
+}
+
+.others .legend-item {
+    margin-bottom: 20px;
+}
+
+.others.ui-upload-wrap {
+    margin-bottom: -20px;
+}
+
+/* pub success */
+.pub-suc .preview-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.certification-guide {
+    /*background: url(../../../../image/jianzhi/web/b/certification_suc_bg.jpg) no-repeat bottom center;*/
+    padding: 70px;
+    text-align: center;
+}
+
+.cer-guide-t {
+    font-size: 20px;
+    color: #4B4B4B;
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.cer-guide-txt {
+    font-size: 14px;
+    color: #707070;
+    line-height: 24px;
+}
+
+.certification-guide .btn {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 144px;
+    margin: 50px auto 0;
+}
+
+.form-optBtn .btn-lg {
+	width: 144px;
+}
+
+/****fixed tips*****/
+.fixed-formTip {
+	position: absolute;
+	right: 100px;
+	width: 226px;
+	border: solid 2px #4b4b4b;
+	background-color: #fff;
+	z-index: 11;
+}
+
+.fixed-formTip h3 {
+	position: relative;
+	font: 700 20px/28px 'hiragino sans gb', 'Microsoft YaHei';
+	padding: 17px 20px 10px 20px;
+	color: #4b4b4b;
+}
+
+.fixed-formTip h3:before {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0;
+	width: 30px;
+	height: 3px;
+	background-color: #4b4b4b;
+}
+
+.fixed-formTip-con {
+	padding: 10px 20px 30px;
+	font: 400 16px/28px 'hiragino sans gb', 'Microsoft YaHei';
+	color: #707070;
+	background-color: #fff;
+}
+
+.fixed-formTip-con h4 {
+	font: 700 16px/28px 'hiragino sans gb', 'Microsoft YaHei';
+	color: #707070;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.fixed-formTip-section {
+	font-size: 12px;
+	color: #707070;
+	line-height: 20px;
+	background-color: #fafafa;
+	padding: 10px;
+}
+
+.certification-extend {
+	background-color: #f1f3f8;
+}
+
+.pub-suc .btn-lg {
+	display: block;
+	margin: 50px auto 0;
+	width: 144px;
+	height: 50px;
+	font: 400 16px/50px 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.pub-suc .ui-suc-main,
+.pub-suc .ui-fail-main,
+.pub-suc .ui-warn-main {
+	width: 425px;
+}
+
+.additional-list {
+	margin-top: -20px;
+	margin-left: -20px;
+}
+
+.additional-list li {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.additional-list .ui-fCheckbox {
+	padding: 10px 40px;
+}
+
+.additional-list .ui-fCheckbox.active {
+	padding: 9px 39px;
+}
+
+.additional-list li a {
+	position: relative;
+	color: #4B4B4B;
+}
+
+.additional-list li a:hover {
+	text-decoration: none;
+	color: #69e;
+}
+
+.additional-list li a:hover::after {
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 0;
+	right: -19px;
+	background: url("../../../../images/jianzhi/web/b/b_ico_v3.png") no-repeat -44px -46px;
+}
+
+.certification-extend .btn-lg {
+	display: block;
+	width: 144px;
+	height: 50px;
+	font: 400 16px/48px 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.additional-pop {
+	padding: 30px;
+}
+
+.additional-pop-text {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.additional-pop .btn-group {
+	margin-top: 30px;
+}
+
+.certification-extend .mod-content {
+    min-width: 942px;
+}
+
+.superform-suc-guide-slogen {
+    font-size: 20px;
+    color: #4B4B4B;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.superform-suc-guide {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.superform-suc-guide-words {
+    margin-top: 70px;
+    font-size: 14px;
+    color: #707070;
+    line-height: 24px;
+}
+
+.fill-superform-process {
+    font-size: 0;
+}
+
+.fill-superform-process span {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+    color: #999;
+    margin-right: 20px;
+}
+
+.fill-superform-process span em {
+    display: inline-block;
+    margin-top: 50px;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #eee;
+    font-weight: 700;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.superform-suc-guide .form-optBtn {
+    padding-top: 30px;
+}
+
+.superform-suc-guide .btn-yellow {
+    width: auto;
+    padding: 0 20px;
+    height: 50px;
+    font: 400 16px/50px 'hiragino sans gb', 'Microsoft YaHei';
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 1260px) {
+	.preview-form-body .question-field-t,
+	.question-items {
+		margin-right: 280px;
+	}
+
+	.fixed-formTip {
+		right: 25px;
+	}
+}

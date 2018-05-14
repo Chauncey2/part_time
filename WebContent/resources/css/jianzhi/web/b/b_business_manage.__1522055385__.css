@@ -1,0 +1,168 @@
+.mt25 {
+	margin-top:25px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.pl25 {
+	padding-left: 25px;
+}
+.mod-search {
+    padding:30px 20px;
+    background-color: #fff;
+    line-height: 30px;
+    height: 30px;
+    color: #4b4b4b;
+}
+
+.search-group .ui-input-text-sm {
+	width: 167px;
+}
+
+.search-group .ui-input-text-sm + .ui-btn{
+	margin-left: -2px;
+}
+
+.opt-table-link-wrap a {
+	margin-right: 30px;
+}
+
+.opt-table-link-wrap a:last-child {
+	margin-right: 0;
+}
+
+.mod-contract {
+	padding:50px 70px 100px;
+	background-color: #fff;
+}
+
+.contract-info {
+	line-height: 30px;
+	height: 30px;
+}
+
+.contract-code {
+	font-size: 20px;
+	font-family: 'hiragino sans gb', 'Microsoft YaHei';
+	color: #535353;
+	font-weight: 700;
+}
+
+.contract-code span {
+	margin-right: 7px;
+	color: #999;
+}
+
+.contract-status {
+	font-size: 0;
+}
+
+.contract-status-item {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 14px;
+	color: #4b4b4b;
+}
+
+.contract-status-item:first-child {
+	margin-left:0;
+}
+
+.contract-txt-wrap {
+	margin-top: 30px;
+	padding:40px;
+	height: 520px;
+	font-size: 12px;
+	color: #4b4b4b;
+	line-height: 24px;
+	border:solid 1px #e6e6e6;
+	border-radius: 2px;
+	overflow-x:hidden;
+	overflow-y: auto;
+}
+
+.contract-title {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'hiragino sans gb', 'Microsoft YaHei';
+}
+
+.min-contract-code {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.contract-tb-wrap {
+	margin-top: 20px;
+}
+
+.contract-tb {
+	width: 100%;
+	border:solid 1px #4b4b4b;
+	border-collapse: collapse;
+}
+
+.contract-tb td,
+.contract-tb th {
+	border:solid 1px #4b4b4b;
+	padding:10px 20px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.min-contract-title {
+	font-weight: 700;
+}
+
+.noData {
+	position: relative;
+	background-color: #fff;
+	padding:20px 0;
+	min-height: 380px;
+	text-align: center;
+}
+
+
+.mod-contract .btn-group {
+	margin-top: 40px;
+	height: 50px;
+}
+
+.mod-contract .ui-btn-lg {
+	min-width: 158px;
+}
+
+.contract-pop {
+	padding: 30px;
+	max-width: 380px;
+}
+
+.contract-pop-txt {
+	font-family: 'hiragino sans gb', 'Microsoft YaHei';
+	text-align: left;
+	font-size: 16px;
+	line-height: 22px;
+	color: #4b4b4b;
+}
+.getcode-wrap {
+	margin-top: 20px;
+	height: 44px;
+}
+
+.getcode-wrap .ui-input-text {
+	width: 250px;
+}
+
+.getcode-wrap .ui-btn {
+	width: 120px;
+}
+
+.getcode-tip {
+	margin-top: 6px;
+	color: #999;
+	font-size: 12px;
+	line-height: 20px;
+}

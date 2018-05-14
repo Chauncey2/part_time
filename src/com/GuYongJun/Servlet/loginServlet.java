@@ -32,6 +32,7 @@ public class loginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		response.setContentType("json;charset=utf-8");
 		response.setCharacterEncoding("UTF-8");
 		MaintainService maintainService = new MaintainService();
@@ -48,6 +49,7 @@ public class loginServlet extends HttpServlet {
 			//如果用户未登录，则进行登录
 			if(session.getAttribute("userInfo")==null){	
 				userInfo = maintainService.getUserInfoByAccount(account, password);
+				
 				System.out.println(userInfo);
 				
 				System.out.println("json格式："+gson.toJson(userInfo));		

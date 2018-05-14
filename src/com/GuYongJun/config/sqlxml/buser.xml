@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//www.mybatis.org//DTD Mapper 3.0//EN"
+    "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="businessUserInfo">
+
+	<resultMap type="com.GuYongJun.reality.businessInfo" id="businessUserInfoResult">
+		<id column="id" jdbcType="INTEGER" property="id"/>
+		<result column="baccount" jdbcType="VARCHAR" property="baccount"/>
+		<result column="bpassword" jdbcType="VARCHAR" property="bpassword"/>
+		<result column="Cname" jdbcType="VARCHAR" property="Cname"/>
+		<result column="contacts" jdbcType="VARCHAR" property="contacts"/>
+		<result column="email" jdbcType="VARCHAR" property="email"/>
+		<result column="ctel" jdbcType="VARCHAR" property="ctel"/>
+		<result column="JAddress" jdbcType="VARCHAR" property="JAddress"/>
+		<result column="Jlocal" jdbcType="VARCHAR" property="Jlocal"/>
+		<result column="regTime" jdbcType="TIMESTAMP" property="regTime"/>
+	</resultMap>
+	
+	<select id="queryBusinessUserInfo" parameterType="com.GuYongJun.reality.businessInfo" resultMap="businessUserInfoResult">
+		SELECT id,baccount,bpassword,Cname,contacts,email,ctel,JAddress,Jlocal,regTime FROM businessinfo where 1=1
+		<if test="baccount !=null and !&quot;&quot;.equals(baccount.trim())">
+		and baccount=#{baccount}
+		</if>
+		<if test="bpassword !=null and !&quot;&quot;.equals(bpassword.trim())">
+			and bpassword=#{bpassword}
+		</if>
+	<!-- <if test="account !=null and !&quot;&quot;.equals(account.trim())">
+		and account=#{account}
+	</if>
+	<if test="password !=null and !&quot;&quot;.equals(password.trim())">
+		and password=#{password}
+	</if> -->
+	</select >
+	<insert id="insertTobusinessInfo" parameterType="com.GuYongJun.reality.userBean">
+
+	</insert>
+</mapper>
